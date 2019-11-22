@@ -1,0 +1,21 @@
+server:
+  port: 8011
+
+spring:
+  application:
+    name: springboot-jwt
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/springboot-jwt?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+jwt:
+  secret: gYEnno1720_dt
+  expiration: 82800
